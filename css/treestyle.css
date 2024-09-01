@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: none;
+    
+}
+body{
+    overflow-x: hidden;
+
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+header{
+    display: flex;
+    background-color: #84b6f4;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+
+
+.title{
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    
+    margin-bottom: 10px;
+    padding-top: 15px;
+    display: inline-block;
+    filter: drop-shadow(0px 0px 3px #5a4e4e) ;
+
+
+}
+a h1{
+    
+    font-size: 15rem;
+    
+}
+.logo_title{
+    position: relative;
+    top: 2px;
+    left: 31px;
+    width:450px;
+    vertical-align: bottom;
+    display: inline-block;
+    filter: drop-shadow(1px 0px 3px #6e6b6b) ;
+
+}
+
+/*   ARBOL  */
+
+
+.tree{
+    
+    position: relative;
+    top: 35vh;
+    width: 37%;
+    height: 220vh;
+    filter: drop-shadow( 0 0 25px #b7dde4);
+    /* filter: brightness(1000%);
+    filter: grayscale(100%); */
+}
+.border{
+    padding: 20px;
+    background-color: #6578a3;
+    box-shadow: 0 -8px 10px #60606e;
+}
+section{
+
+
+    height: 300vh;
+    background-image: linear-gradient(to top, #00004e, #00276c, #005187, #5589c4, #5589c4, #74a7e4, #6578a3);
+    background-color: #6578a3;;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+}
+
+
+
+
+
+/*   ANIMACIONES   */
+
+.titulo:hover{
+    animation-name: logo;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes logo{
+    0%{
+
+        }
+        50%{
+            transform: scale(1.2);
+
+            filter: drop-shadow(0px 0px 9px #fff) ;
+        }
+        75%{
+            filter: drop-shadow(0px 0px 0px #464444) ;
+        }
+        85%{
+            filter: drop-shadow(50px 0px 60px #fff) ;
+
+            transform: scale(1.3);
+        }
+        95%{
+            transform: scale(1);
+            filter: drop-shadow(0px 0px 4px #fff) ;
+        }
+        100%{
+            transform: scale(1);
+            
+        }
+}
